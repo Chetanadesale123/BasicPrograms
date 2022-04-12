@@ -7,7 +7,7 @@ class Program
     {
         Console.WriteLine("Welcome to Basic Programs");
         bool end = true;
-        Console.WriteLine("1. FlipCoin\n  2. Leap year \n 3.Power Of Two \n 4.Harmonic no \n 5.Prime Factors \n 6. End the Program");
+        Console.WriteLine("1. FlipCoin\n  2. Leap year \n 3.Power Of Two \n 4.Harmonic no \n 5.Prime Factors \n6.Compute Quotient and Remainder \n 7. End the Program");
         while (end == true)
         {
             Console.WriteLine("Take an option to execute");
@@ -35,6 +35,10 @@ class Program
                     primefactors.PrimeFactor();
                     break;
                 case 6:
+                    ComputeQuotientAndRemainder QuoRem = new ComputeQuotientAndRemainder();
+                    QuoRem.QuotientRemainder();
+                    break;
+                case 7:
                     end = false;
                     break;
                 default:
