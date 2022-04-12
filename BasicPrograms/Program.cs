@@ -7,7 +7,7 @@ class Program
     {
         Console.WriteLine("Welcome to Basic Programs");
         bool end = true;
-        Console.WriteLine("1. FlipCoin\n 2. End the Program");
+        Console.WriteLine("1. FlipCoin\n  2. Leap year \n 3. End the Program");
         while (end == true)
         {
             Console.WriteLine("Take an option to execute");
@@ -19,6 +19,10 @@ class Program
                     flipCoin.Flip();
                     break;
                 case 2:
+                    LeapYear leapyear = new LeapYear();
+                    leapyear.Year();
+                    break;
+                case 3:
                     end = false;
                     break;
                 default:
